@@ -1,0 +1,144 @@
+@import url('data:application/octet-stream;base64,QGZvbnQtZmFjZSB7CiAgZm9udC1mYW1pbHk6ICdQb3BwaW5zJzsKICBmb250LXN0eWxlOiBub3JtYWw7CiAgZm9udC13ZWlnaHQ6IDQwMDsKICBmb250LWRpc3BsYXk6IHN3YXA7CiAgc3JjOiB1cmwoaHR0cHM6Ly9mb250cy5nc3RhdGljLmNvbS9zL3BvcHBpbnMvdjIwL3B4aUV5cDhrdjhKSGdGVnJGSkEudHRmKSBmb3JtYXQoJ3RydWV0eXBlJyk7Cn0KQGZvbnQtZmFjZSB7CiAgZm9udC1mYW1pbHk6ICdQb3BwaW5zJzsKICBmb250LXN0eWxlOiBub3JtYWw7CiAgZm9udC13ZWlnaHQ6IDUwMDsKICBmb250LWRpc3BsYXk6IHN3YXA7CiAgc3JjOiB1cmwoaHR0cHM6Ly9mb250cy5nc3RhdGljLmNvbS9zL3BvcHBpbnMvdjIwL3B4aUJ5cDhrdjhKSGdGVnJMR1Q5VjFzLnR0ZikgZm9ybWF0KCd0cnVldHlwZScpOwp9CkBmb250LWZhY2UgewogIGZvbnQtZmFtaWx5OiAnUG9wcGlucyc7CiAgZm9udC1zdHlsZTogbm9ybWFsOwogIGZvbnQtd2VpZ2h0OiA2MDA7CiAgZm9udC1kaXNwbGF5OiBzd2FwOwogIHNyYzogdXJsKGh0dHBzOi8vZm9udHMuZ3N0YXRpYy5jb20vcy9wb3BwaW5zL3YyMC9weGlCeXA4a3Y4SkhnRlZyTEVqNlYxcy50dGYpIGZvcm1hdCgndHJ1ZXR5cGUnKTsKfQpAZm9udC1mYWNlIHsKICBmb250LWZhbWlseTogJ1BvcHBpbnMnOwogIGZvbnQtc3R5bGU6IG5vcm1hbDsKICBmb250LXdlaWdodDogNzAwOwogIGZvbnQtZGlzcGxheTogc3dhcDsKICBzcmM6IHVybChodHRwczovL2ZvbnRzLmdzdGF0aWMuY29tL3MvcG9wcGlucy92MjAvcHhpQnlwOGt2OEpIZ0ZWckxDejdWMXMudHRmKSBmb3JtYXQoJ3RydWV0eXBlJyk7Cn0K');
+:root{
+  --font-color: #6b727f;
+  --principal-color: #34b45e;
+}
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+/* principal box */
+.wrap{
+  width: 100vw;
+  height: 100vh;
+  background: #31353c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main{
+  background: #262a2e;
+  width: 35%;
+  padding: 30px 30px;
+}
+
+/* img and welcome */
+header .login{
+  display: block;
+  margin: 0 auto;
+  width: 450px;
+  height: 350px;
+  margin-bottom: 1rem;
+}
+
+header h1{
+  text-align: center;
+  font-size: 1.8em;
+  color: var(--font-color);
+}
+header{
+  margin-bottom: 15px;
+}
+
+/* form */
+form{
+  width: 100%;
+  display: grid;
+  grid-auto-rows: minmax(10px, 40px);
+  grid-gap: 0.5rem;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+form .input-group{
+  width: 65%;
+  height: 90%;
+  position: relative;
+}
+form input[type="text"],
+form input[type="password"]{
+  height: 100%;
+  width: 100%;
+  padding-left: 2rem;
+  color: var(--font-color);
+  font-weight: bold;
+  font-size: 0.8em;
+  font-family: 'Raleway', sans-serif;
+  outline: none;
+  border: 0;
+  border-bottom: 3px solid var(--font-color);
+  border-radius: 2px;
+  background: none;
+  transition: all .3s ease;
+}
+
+/* input icons */
+form .input-group i{
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  color: #4b5159;
+  transition: all .3s ease;
+}
+form input:focus ~  i{
+  color: var(--principal-color);
+}
+
+form input[type="submit"]{
+  font-weight: bold;
+  font-size: 1em;
+  font-family: 'Raleway', sans-serif;
+  width: 50%;
+  height: 100%;
+  margin-top: 2rem;
+  border: 3px solid var(--principal-color);
+  border-radius: 5px;
+  background: var(--principal-color);
+  color: #fff;
+  cursor: pointer;
+  transition: all .1s ease;
+}
+/* form input[type="submit"]:hover{
+  background: none;
+  color: var(--principal-color);
+} */
+
+/* focus input */
+form input[type="text"]:focus,
+form input[type="password"]:focus{
+  border-color: var(--principal-color);
+  background: rgba(49, 53, 60, 0.3);
+}
+
+/* error */
+main .errores{
+  margin-top: 15px;
+  padding-left: 20px;
+  color: #c21717;
+  list-style: none;
+}
+main .errores i{
+  margin-right: 1rem;
+}
+
+/* banner login / sign in */
+main p{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 0.9em;
+  color: var(--font-color);
+}
+main a{
+  color: var(--principal-color);
+  text-decoration: none;
+}

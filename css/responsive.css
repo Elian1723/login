@@ -1,0 +1,93 @@
+@media screen and (max-width: 1700px){
+  body{
+    font-size: 17.5px;
+  }
+  header .login{
+    width: 350px;
+    height: 250px;
+  }
+  form input[type="submit"]{
+    height: 85%;
+  }
+}
+
+@media screen and (max-width: 1500px){
+  main{
+    width: 40%;
+  }
+  form .input-group{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width:1300px){
+  main{
+    width: 45%;
+  }
+  header .login{
+    width: 300px;
+    height: 200px;
+  }
+  form .input-group{
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1150px){
+  body{
+    font-size: 16px;
+  }
+  main{
+    width: 50%;
+  }
+  form input[type="submit"]{
+    height: 75%;
+  }
+}
+
+@media screen and (max-width: 830px){
+  main{
+    width: 65%;
+  }
+  form .input-group{
+    width: 75%;
+  }
+}
+
+
+/* celulares */
+@media screen and (max-width: 600px){
+  .wrap{
+    background: #262a2e;
+  }
+  main{
+    background: none;
+    width: 100%;
+  }
+  form input[type="submit"]{
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 430px){
+  body{
+    font-size: 15px;
+  }
+  header .login{
+    width: 250px;
+    height: 150px;
+    /* margin-bottom: 1rem; */
+  }
+  form .input-group{
+    width: 80%;
+  }
+  form input[type="submit"]{
+    height: 65%;
+  }
+}
+
+@media screen and (max-width: 380px){
+  form .input-group{
+    width: 85%;
+  }
+}
